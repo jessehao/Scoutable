@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F672A13221A299530044B6DE /* Scoutable.h in Headers */ = {isa = PBXBuildFile; fileRef = F672A13021A299530044B6DE /* Scoutable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F672A13921A299620044B6DE /* Scoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672A13821A299620044B6DE /* Scoutable.swift */; };
+		F672A13B21A2997F0044B6DE /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F672A13A21A2997F0044B6DE /* Operator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F672A12D21A299530044B6DE /* Scoutable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scoutable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F672A13021A299530044B6DE /* Scoutable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scoutable.h; sourceTree = "<group>"; };
 		F672A13121A299530044B6DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F672A13821A299620044B6DE /* Scoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoutable.swift; sourceTree = "<group>"; };
+		F672A13A21A2997F0044B6DE /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				F672A13021A299530044B6DE /* Scoutable.h */,
 				F672A13121A299530044B6DE /* Info.plist */,
+				F672A13821A299620044B6DE /* Scoutable.swift */,
+				F672A13A21A2997F0044B6DE /* Operator.swift */,
 			);
 			path = Scoutable;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					F672A12C21A299530044B6DE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F672A13921A299620044B6DE /* Scoutable.swift in Sources */,
+				F672A13B21A2997F0044B6DE /* Operator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		F672A13621A299530044B6DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Snoware.Scoutable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		F672A13721A299530044B6DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
