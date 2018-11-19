@@ -16,3 +16,12 @@ struct Scoutable<T:AnyObject> {
 extension Scoutable : ExpressibleByNilLiteral {
 	init(nilLiteral: ()) { self.value = nil }
 }
+
+prefix operator *
+prefix func * <T:AnyObject>(_ unwrapped:@autoclosure () -> T?) -> Scoutable<T> {
+	return Scoutable<T>(unwrapped())
+}
+
+prefix func * <T:AnyObject>(_ meta:T?.Type) -> Scoutable<T> {
+	return Scoutable<T>(nilLiteral: ())
+}
